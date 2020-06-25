@@ -7,11 +7,13 @@
 //
 
 import Foundation
-struct eModel:Codable{
+import SwiftUI
+struct ECommModel:Codable,Hashable,Identifiable{
     let categories:[Category]
+    let id:Int?
 //    let rankings:
 }
-struct Category:Codable{
-    let id:Int?
-    let name:String?
+struct Category:Codable,Hashable,Identifiable{
+    let id:Int
+    let name:String
 }

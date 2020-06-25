@@ -7,19 +7,25 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
-    
+    @State var tutors: [Category] = []
+
     init() {
-        Webservice().fetchAllData{
-            print($0)
-     }
+//        Webservice.init().fetchAllData { (data) in
+//            self.tutors = [data.categories]
+//        }
     }
     var body: some View {
-        Text("Hello, World!")
+        List(tutors){ item in
+                 VStack(alignment: .leading) {
+                     Text("Hello World")
+//                     Text("\(item.id)")
+//                         .font(.subheadline)
+//                         .color(.gray)
+                 }
+             }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
