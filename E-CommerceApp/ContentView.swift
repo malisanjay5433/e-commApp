@@ -9,6 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        Webservice().fetchAllData{
+            print($0)
+     }
+    }
     var body: some View {
         Text("Hello, World!")
     }

@@ -14,6 +14,8 @@
 		91009BDF24A480BC00CCC8E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91009BDE24A480BC00CCC8E4 /* Preview Assets.xcassets */; };
 		91009BE224A480BC00CCC8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91009BE024A480BC00CCC8E4 /* LaunchScreen.storyboard */; };
 		91009BED24A480BC00CCC8E4 /* E_CommerceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91009BEC24A480BC00CCC8E4 /* E_CommerceAppTests.swift */; };
+		91009BFA24A4824700CCC8E4 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91009BF924A4824700CCC8E4 /* Webservice.swift */; };
+		91009BFD24A482A500CCC8E4 /* eModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91009BFC24A482A500CCC8E4 /* eModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		91009BE824A480BC00CCC8E4 /* E-CommerceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-CommerceAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91009BEC24A480BC00CCC8E4 /* E_CommerceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_CommerceAppTests.swift; sourceTree = "<group>"; };
 		91009BEE24A480BC00CCC8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91009BF924A4824700CCC8E4 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		91009BFC24A482A500CCC8E4 /* eModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,9 @@
 		91009BD424A480BB00CCC8E4 /* E-CommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				91009BFE24A4865700CCC8E4 /* ViewModel */,
+				91009BFB24A4825600CCC8E4 /* Model */,
+				91009BF824A4822A00CCC8E4 /* Services */,
 				91009BD524A480BB00CCC8E4 /* AppDelegate.swift */,
 				91009BD724A480BB00CCC8E4 /* SceneDelegate.swift */,
 				91009BD924A480BB00CCC8E4 /* ContentView.swift */,
@@ -105,6 +112,29 @@
 				91009BEE24A480BC00CCC8E4 /* Info.plist */,
 			);
 			path = "E-CommerceAppTests";
+			sourceTree = "<group>";
+		};
+		91009BF824A4822A00CCC8E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				91009BF924A4824700CCC8E4 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		91009BFB24A4825600CCC8E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91009BFC24A482A500CCC8E4 /* eModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91009BFE24A4865700CCC8E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91009BD624A480BB00CCC8E4 /* AppDelegate.swift in Sources */,
+				91009BFD24A482A500CCC8E4 /* eModel.swift in Sources */,
 				91009BD824A480BB00CCC8E4 /* SceneDelegate.swift in Sources */,
+				91009BFA24A4824700CCC8E4 /* Webservice.swift in Sources */,
 				91009BDA24A480BB00CCC8E4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
