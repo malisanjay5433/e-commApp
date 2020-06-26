@@ -12,7 +12,7 @@ class Webservice {
         guard let url = URL(string: "https://stark-spire-93433.herokuapp.com/json")else{fatalError("Undefined Url")}
         URLSession.shared.dataTask(with: url) { (data, _ , error) in
             do{
-                let allData = try JSONDecoder().decode(ECommModel.self, from: data!)
+                let allData = try JSONDecoder().decode(ECommModel.self, from: data ?? Data())
                 DispatchQueue.main.async {
                     completion(allData)
                 }

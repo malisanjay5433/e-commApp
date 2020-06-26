@@ -16,4 +16,17 @@ struct ECommModel:Codable,Hashable,Identifiable{
 struct Category:Codable,Hashable,Identifiable{
     let id:Int
     let name:String
+    let products:[Products]
+}
+struct Products:Codable,Hashable,Identifiable{
+    let id:Int
+    let name:String
+    let date_added:String
+    let variants:[Variants]?
+}
+struct Variants:Codable,Hashable,Identifiable{
+    let id:Int?
+    let color:String?
+    let size:Int?
+//    let price:Int
 }
