@@ -6,29 +6,31 @@
 //  Copyright © 2020 theappmaker. All rights reserved.
 //
 
-import SwiftUI
-
+import SwiftUI   
 struct CategoryList: View {
     @State var allcategory:[Category] = []
+    @State var allrankings:[Rankings] = []
+    
     var body: some View {
         NavigationView {
         List(allcategory) { item in
             Text(item.name)
-            .onTapGesture {
-                print("\(item.name)")
-            }
-            NavigationLink(destination: ProductsCollectionView(products: item.products,nametitle:item.name)) {
+            NavigationLink(destination: ProductsCollectionView(products: item.products,nametitle:item.name,allrankings:self.allrankings)) {
                 Text("")
             }
+
         }
         .onAppear{
             Webservice().getCategories { (item) in
                 self.allcategory = item.categories
+                self.allrankings = item.rankings
              }
         }
             .navigationBarTitle(Text("Categories"))
+
        }
     }
+    
 }
 struct CategoryList_Previews: PreviewProvider {
     static var previews: some View {

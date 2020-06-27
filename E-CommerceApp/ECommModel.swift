@@ -11,7 +11,7 @@ import SwiftUI
 struct ECommModel:Codable,Hashable,Identifiable{
     let categories:[Category]
     let id:Int?
-//    let rankings:
+    let rankings:[Rankings]
 }
 struct Category:Codable,Hashable,Identifiable{
     let id:Int
@@ -28,5 +28,13 @@ struct Variants:Codable,Hashable,Identifiable{
     let id:Int?
     let color:String?
     let size:Int?
-//    let price:Int
+}
+struct Rankings:Codable,Hashable,Identifiable{
+    var id: Int?
+    let ranking : String
+    let products:[ProductsRanking]
+}
+struct ProductsRanking:Codable,Hashable,Identifiable{
+    let id:Int?
+    let view_count : Int?
 }
