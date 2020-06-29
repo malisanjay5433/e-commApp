@@ -101,7 +101,6 @@
 			children = (
 				91009BFE24A4865700CCC8E4 /* ViewModel */,
 				91009BFB24A4825600CCC8E4 /* Model */,
-				91009BFC24A482A500CCC8E4 /* ECommModel.swift */,
 				91009BF824A4822A00CCC8E4 /* Services */,
 				91009BD524A480BB00CCC8E4 /* AppDelegate.swift */,
 				91009BD724A480BB00CCC8E4 /* SceneDelegate.swift */,
@@ -142,6 +141,7 @@
 		91009BFB24A4825600CCC8E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91009BFC24A482A500CCC8E4 /* ECommModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
